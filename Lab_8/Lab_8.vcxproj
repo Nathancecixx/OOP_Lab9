@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AnotherClassifier.cpp" />
-    <ClCompile Include="datapoint.cpp" />
+    <ClCompile Include="DataPoint.cpp" />
     <ClCompile Include="FileHandler.cpp" />
     <ClCompile Include="KNNClassifier.cpp" />
     <ClCompile Include="main.cpp" />
@@ -137,7 +137,7 @@
   <ItemGroup>
     <ClInclude Include="AnotherClassifier.h" />
     <ClInclude Include="classifier.h" />
-    <ClInclude Include="datapoint.h" />
+    <ClInclude Include="DataPoint.h" />
     <ClInclude Include="Filehandler.h" />
     <ClInclude Include="KNNClassifier.h" />
     <ClInclude Include="NNClassifier.h" />

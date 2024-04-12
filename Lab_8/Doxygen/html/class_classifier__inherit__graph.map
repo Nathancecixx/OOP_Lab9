@@ -1,0 +1,9 @@
+<map id="Classifier" name="Classifier">
+<area shape="rect" id="Node000001" title="Classifier base abstract class." alt="" coords="163,5,237,32"/>
+<area shape="rect" id="Node000002" href="$class_another_classifier.html" title="Unwritten Classifier Class." alt="" coords="5,80,125,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,42,90,82,87,77,162,37"/>
+<area shape="rect" id="Node000003" href="$class_k_n_n_classifier.html" title="Unwritten Classifier Class." alt="" coords="149,80,250,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,48,202,80,197,80,197,48"/>
+<area shape="rect" id="Node000004" href="$class_n_n_classifier.html" title="Nearest neighbour classifier." alt="" coords="275,80,367,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="235,38,301,77,298,82,232,43"/>
+</map>

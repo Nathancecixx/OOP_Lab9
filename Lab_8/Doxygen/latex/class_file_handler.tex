@@ -1,0 +1,86 @@
+\doxysection{File\+Handler Class Reference}
+\hypertarget{class_file_handler}{}\label{class_file_handler}\index{FileHandler@{FileHandler}}
+
+
+Class made to handle file I/O.  
+
+
+
+
+{\ttfamily \#include $<$Filehandler.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ \mbox{\hyperlink{class_file_handler_afffcb0ba9491d6b77ee63222fc8647d8}{read\+Data}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em This function reads data from a given filename. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_file_handler_ac1672f3c4bc673597910a7c661f3df84}{write\+Data}} (vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ dp, string file\+Name)
+\begin{DoxyCompactList}\small\item\em Writes data to file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class made to handle file I/O. 
+
+This class is in charge of handling all of the file input and output operations. \begin{DoxyAuthor}{Author}
+Kyle, Nathan, Ginbot 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/04/2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_file_handler_afffcb0ba9491d6b77ee63222fc8647d8}\label{class_file_handler_afffcb0ba9491d6b77ee63222fc8647d8} 
+\index{FileHandler@{FileHandler}!readData@{readData}}
+\index{readData@{readData}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{readData()}{readData()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ File\+Handler\+::read\+Data (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+This function reads data from a given filename. 
+
+After receiving a filename, the function will read the data and then put that data into \doxylink{class_data_point}{Data\+Point} objects. 
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Data\+Point$>$ 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Kyle, Nathan, Ginbot 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/04/2024 
+\end{DoxyDate}
+\Hypertarget{class_file_handler_ac1672f3c4bc673597910a7c661f3df84}\label{class_file_handler_ac1672f3c4bc673597910a7c661f3df84} 
+\index{FileHandler@{FileHandler}!writeData@{writeData}}
+\index{writeData@{writeData}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{writeData()}{writeData()}}
+{\footnotesize\ttfamily bool File\+Handler\+::write\+Data (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$}]{dp,  }\item[{string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Writes data to file. 
+
+Given a filename, the function opens a file and writes the vector \doxylink{class_data_point}{Data\+Point} to the file. 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Data\+Point$>$,string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Kyle, Nathan, Ginbot 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/04/2024 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_filehandler_8h}{Filehandler.\+h}}\item 
+File\+Handler.\+cpp\end{DoxyCompactItemize}

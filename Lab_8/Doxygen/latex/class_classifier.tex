@@ -1,0 +1,60 @@
+\doxysection{Classifier Class Reference}
+\hypertarget{class_classifier}{}\label{class_classifier}\index{Classifier@{Classifier}}
+
+
+\doxylink{class_classifier}{Classifier} base abstract class.  
+
+
+
+
+{\ttfamily \#include $<$classifier.\+h$>$}
+
+
+
+Inheritance diagram for Classifier\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_classifier__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_classifier_a2311a9c32a01a01bf2826ec802615d49}{predict}} (const \mbox{\hyperlink{class_data_point}{Data\+Point}} \&sample)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_classifier_ac933617622697de3317267dcf1263fc8}\label{class_classifier_ac933617622697de3317267dcf1263fc8} 
+std\+::vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ {\bfseries training\+Data}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_classifier}{Classifier} base abstract class. 
+
+This class is used as the base class to be inherited by all of the different kinds of Classifiers \begin{DoxyAuthor}{Author}
+Kyle, Nathan, Ginbot 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/04/2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_classifier_a2311a9c32a01a01bf2826ec802615d49}\label{class_classifier_a2311a9c32a01a01bf2826ec802615d49} 
+\index{Classifier@{Classifier}!predict@{predict}}
+\index{predict@{predict}!Classifier@{Classifier}}
+\doxysubsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily virtual int Classifier\+::predict (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_data_point}{Data\+Point}} \&}]{sample }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_another_classifier_ae0e67e20655075b7a455d17c207cdf1f}{Another\+Classifier}}, \mbox{\hyperlink{class_k_n_n_classifier_a1c9b07a2610135bdf10a377e4ff1ea10}{KNNClassifier}}, and \mbox{\hyperlink{class_n_n_classifier_a1396ffd924f8f5e73f1c66f894a9b46d}{NNClassifier}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classifier_8h}{classifier.\+h}}\end{DoxyCompactItemize}

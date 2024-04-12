@@ -18,7 +18,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="datapoint.cpp">
+    <ClCompile Include="DataPoint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FileHandler.cpp">
@@ -35,7 +35,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="datapoint.h">
+    <ClInclude Include="DataPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Filehandler.h">

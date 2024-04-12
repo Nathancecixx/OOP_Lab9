@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_classifier.html" title="Classifier base abstract class." alt="" coords="5,56,80,83"/>
+<area shape="rect" id="Node000001" href="$class_another_classifier.html" title="Unwritten Classifier Class." alt="" coords="128,5,247,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="93,49,146,30,148,35,95,54"/>
+<area shape="rect" id="Node000002" href="$class_k_n_n_classifier.html" title="Unwritten Classifier Class." alt="" coords="137,56,238,83"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="95,67,136,67,136,72,95,72"/>
+<area shape="rect" id="Node000003" href="$class_n_n_classifier.html" title="Nearest neighbour classifier." alt="" coords="141,107,234,133"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="95,85,148,104,146,109,93,90"/>
+</map>

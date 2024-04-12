@@ -1,3 +1,11 @@
+/* ============================================================== */
+/**
+ * @file FileHandler.cpp
+ * @author Kyle, Nathan, Ginbot
+ * @date 10/04/2024
+**/
+/* ============================================================== */
+
 #include "FileHandler.h"
 #include <fstream>
 #include <sstream>
@@ -5,8 +13,16 @@
 
 using namespace std;
 
-vector<datapoint> FileHandler::readData(string fileName) {
-    vector<datapoint> data;
+/// @brief This function reads data from a given filename.
+///
+/// After receiving a filename, the function will read the data and then
+/// put that data into DataPoint objects.
+/// @param string
+/// @return vector<DataPoint>
+/// @author Kyle, Nathan, Ginbot 
+/// @date 10/04/2024
+vector<DataPoint> FileHandler::readData(string fileName) {
+    vector<DataPoint> data;
     ifstream file;
     file.open(fileName);
 
@@ -41,7 +57,7 @@ vector<datapoint> FileHandler::readData(string fileName) {
             else
                 Orientation = 0;
 
-            data.push_back(datapoint(X, Y, Z, Orientation));
+            data.push_back(DataPoint(X, Y, Z, Orientation));
         }
     }
 
@@ -49,7 +65,15 @@ vector<datapoint> FileHandler::readData(string fileName) {
     return data;
 }
 
-bool FileHandler::writeData(vector<datapoint> dp, string fileName) {
+/// @brief Writes data to file
+///
+/// Given a filename, the function opens a file and writes the vector
+/// DataPoint to the file.
+/// @param vector<DataPoint>, string
+/// @return bool
+/// @author Kyle, Nathan, Ginbot 
+/// @date 10/04/2024
+bool FileHandler::writeData(vector<DataPoint> dp, string fileName) {
 	ofstream fout;
 	int label;
 	string orientation;

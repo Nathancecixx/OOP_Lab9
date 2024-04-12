@@ -1,0 +1,22 @@
+\doxysection{classifier.\+h}
+\hypertarget{classifier_8h_source}{}\label{classifier_8h_source}\mbox{\hyperlink{classifier_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ ==============================================================\ */}}
+\DoxyCodeLine{00007\ \textcolor{comment}{/*\ ==============================================================\ */}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_data_point_8h}{DataPoint.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_classifier}{Classifier}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00023\ \ \ \ \ std::vector<DataPoint>\ trainingData;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ predict(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_data_point}{DataPoint}}\&\ sample)\ =\ 0;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \};}
+
+\end{DoxyCode}

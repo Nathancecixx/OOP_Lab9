@@ -1,10 +1,24 @@
+/* ============================================================== */
+/**
+ * @file DataPoint.h 
+ * @author Kyle, Nathan, Ginbot
+ * @date 10/04/2024
+**/
+/* ============================================================== */
+
 #pragma once
 
-class datapoint
+/// @brief DataPoint
+///
+/// This class is used to represent a single point of data.
+/// a data point is represented by (x, y, z, orientation)
+/// @author Kyle, Nathan, Ginbot 
+/// @date 10/04/2024
+class DataPoint
 {
 public:
-	datapoint();
-	datapoint(float X, float Y, float Z, int Orientation = 0);
+	DataPoint();
+	DataPoint(float X, float Y, float Z, int Orientation = 0);
 
 	float getX() const;
 	float getY() const;

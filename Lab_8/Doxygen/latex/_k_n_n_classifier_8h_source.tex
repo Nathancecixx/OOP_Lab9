@@ -1,0 +1,22 @@
+\doxysection{KNNClassifier.\+h}
+\hypertarget{_k_n_n_classifier_8h_source}{}\label{_k_n_n_classifier_8h_source}\mbox{\hyperlink{_k_n_n_classifier_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ ==============================================================\ */}}
+\DoxyCodeLine{00007\ \textcolor{comment}{/*\ ==============================================================\ */}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{classifier_8h}{classifier.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_n_n_classifier}{KNNClassifier}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_classifier}{Classifier}}\ \{}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_k_n_n_classifier}{KNNClassifier}}(\textcolor{keyword}{const}\ std::vector<DataPoint>\&\ trainingData)\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ this-\/>trainingData\ =\ trainingData;}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_k_n_n_classifier_a1c9b07a2610135bdf10a377e4ff1ea10}{predict}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_data_point}{DataPoint}}\&\ sample)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ \};}
+
+\end{DoxyCode}

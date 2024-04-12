@@ -1,0 +1,158 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include "{}File\+Handler.\+h"{}}\newline
+{\ttfamily \#include "{}NNClassifier.\+h"{}}\newline
+{\ttfamily \#include "{}KNNClassifier.\+h"{}}\newline
+{\ttfamily \#include "{}Another\+Classifier.\+h"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8cpp_a4e5b9a0ef00a30e4519a917b062f0ff2}\label{main_8cpp_a4e5b9a0ef00a30e4519a917b062f0ff2} 
+\#define {\bfseries TRAINING\+\_\+\+DATA\+\_\+\+FILE}~"{}training\+Data.\+txt"{}
+\item 
+\Hypertarget{main_8cpp_a38d3e0acb21710885f312a1b31a39621}\label{main_8cpp_a38d3e0acb21710885f312a1b31a39621} 
+\#define {\bfseries TESTING\+\_\+\+DATA\+\_\+\+FILE}~"{}testing\+Data.\+txt"{}
+\item 
+\Hypertarget{main_8cpp_aed2f07b3ec8f366ed8f3517705d37900}\label{main_8cpp_aed2f07b3ec8f366ed8f3517705d37900} 
+\#define {\bfseries UNKNOWN\+\_\+\+DATA\+\_\+\+FILE}~"{}unknown\+Data.\+txt"{}
+\item 
+\Hypertarget{main_8cpp_a170755e30c36be4904106b7bb279b1ec}\label{main_8cpp_a170755e30c36be4904106b7bb279b1ec} 
+\#define {\bfseries NN}~0
+\item 
+\Hypertarget{main_8cpp_a3b1076720ba707d01eb86475b2e2529b}\label{main_8cpp_a3b1076720ba707d01eb86475b2e2529b} 
+\#define {\bfseries KNN}~1
+\item 
+\Hypertarget{main_8cpp_ae1ea0be532a08beb891a7a4dafadc4f9}\label{main_8cpp_ae1ea0be532a08beb891a7a4dafadc4f9} 
+\#define {\bfseries ANOTHER}~2
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_point}{Data\+Point}} \mbox{\hyperlink{main_8cpp_a723027f21e471f6d918e76d43af1213f}{Get\+Data\+Point}} ()
+\begin{DoxyCompactList}\small\item\em This function takes user input. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{main_8cpp_aa2c37cc5b7c9290347d6685bb41de092}{Get\+File\+Name}} ()
+\begin{DoxyCompactList}\small\item\em This function takes file name from user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a7f4398ae863859769ed9c174419e2d57}{classify}} (\mbox{\hyperlink{class_classifier}{Classifier}} \texorpdfstring{$\ast$}{*}classifier, vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ data)
+\begin{DoxyCompactList}\small\item\em This function classifis a vector of data points. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_ab056bb98618adac2963c1696f4e6d93c}{classify}} (\mbox{\hyperlink{class_classifier}{Classifier}} \texorpdfstring{$\ast$}{*}classifier, \mbox{\hyperlink{class_data_point}{Data\+Point}} data)
+\begin{DoxyCompactList}\small\item\em This function classifis a given data point. \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Kyle, Nathan, Ginbot 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/04/2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ab056bb98618adac2963c1696f4e6d93c}\label{main_8cpp_ab056bb98618adac2963c1696f4e6d93c} 
+\index{main.cpp@{main.cpp}!classify@{classify}}
+\index{classify@{classify}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{classify()}{classify()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void classify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_classifier}{Classifier}} \texorpdfstring{$\ast$}{*}}]{classifier,  }\item[{\mbox{\hyperlink{class_data_point}{Data\+Point}}}]{data }\end{DoxyParamCaption})}
+
+
+
+This function classifis a given data point. 
+
+This function takes in a classifier pointer, (this can be any class that inherits from the classifier base class), and then predicts the orientation of the given data point 
+\begin{DoxyParams}{Parameters}
+{\em Data\+Point\&} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Kyle, Nathan, Ginbot 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/04/2024 
+\end{DoxyDate}
+\Hypertarget{main_8cpp_a7f4398ae863859769ed9c174419e2d57}\label{main_8cpp_a7f4398ae863859769ed9c174419e2d57} 
+\index{main.cpp@{main.cpp}!classify@{classify}}
+\index{classify@{classify}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{classify()}{classify()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void classify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_classifier}{Classifier}} \texorpdfstring{$\ast$}{*}}]{classifier,  }\item[{vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$}]{data }\end{DoxyParamCaption})}
+
+
+
+This function classifis a vector of data points. 
+
+This function takes in a classifier pointer, (this can be any class that inherits from the classifier base class), and then predicts the orientation of the data points stored inside of the vector 
+\begin{DoxyParams}{Parameters}
+{\em Classifier\texorpdfstring{$\ast$}{*},vector$<$\+Data\+Point$>$} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Kyle, Nathan, Ginbot 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/04/2024 
+\end{DoxyDate}
+\Hypertarget{main_8cpp_a723027f21e471f6d918e76d43af1213f}\label{main_8cpp_a723027f21e471f6d918e76d43af1213f} 
+\index{main.cpp@{main.cpp}!GetDataPoint@{GetDataPoint}}
+\index{GetDataPoint@{GetDataPoint}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{GetDataPoint()}{GetDataPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data_point}{Data\+Point}} Get\+Data\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function takes user input. 
+
+This function takes in a data points x, y and z values in order, creates the datapoint, and then returns it. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_data_point}{Data\+Point} 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Kyle, Nathan, Ginbot 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/04/2024 
+\end{DoxyDate}
+\Hypertarget{main_8cpp_aa2c37cc5b7c9290347d6685bb41de092}\label{main_8cpp_aa2c37cc5b7c9290347d6685bb41de092} 
+\index{main.cpp@{main.cpp}!GetFileName@{GetFileName}}
+\index{GetFileName@{GetFileName}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{GetFileName()}{GetFileName()}}
+{\footnotesize\ttfamily string Get\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function takes file name from user. 
+
+It let\textquotesingle{}s user input the file name which contatins the points they want to classify 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Kyle, Nathan, Ginbot 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/04/2024 
+\end{DoxyDate}

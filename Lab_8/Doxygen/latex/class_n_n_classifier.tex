@@ -1,0 +1,91 @@
+\doxysection{NNClassifier Class Reference}
+\hypertarget{class_n_n_classifier}{}\label{class_n_n_classifier}\index{NNClassifier@{NNClassifier}}
+
+
+Nearest neighbour classifier.  
+
+
+
+
+{\ttfamily \#include $<$NNClassifier.\+h$>$}
+
+
+
+Inheritance diagram for NNClassifier\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_n_n_classifier__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for NNClassifier\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_n_n_classifier__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_n_n_classifier_a2097bed8c881b5ec58daf920d6cf08c6}\label{class_n_n_classifier_a2097bed8c881b5ec58daf920d6cf08c6} 
+{\bfseries NNClassifier} (const std\+::vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ \&training\+Data)
+\item 
+int \mbox{\hyperlink{class_n_n_classifier_a1396ffd924f8f5e73f1c66f894a9b46d}{predict}} (const \mbox{\hyperlink{class_data_point}{Data\+Point}} \&sample) override
+\begin{DoxyCompactList}\small\item\em This function predicts what a point is based on nearest neighbour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_classifier}{Classifier}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ {\bfseries training\+Data}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Nearest neighbour classifier. 
+
+This class contains the protected training\+Data from the inherited \doxylink{class_classifier}{Classifier} class. This class contains the public predict function to determine what orientation a \doxylink{class_data_point}{Data\+Point} is in. \begin{DoxyAuthor}{Author}
+Kyle, Nathan, Ginbot 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/04/2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_n_n_classifier_a1396ffd924f8f5e73f1c66f894a9b46d}\label{class_n_n_classifier_a1396ffd924f8f5e73f1c66f894a9b46d} 
+\index{NNClassifier@{NNClassifier}!predict@{predict}}
+\index{predict@{predict}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily int NNClassifier\+::predict (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_data_point}{Data\+Point}} \&}]{sample }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This function predicts what a point is based on nearest neighbour. 
+
+This function will calculate the orientation of a point based on the neighbours around it. It uses euclidian distance to determine which point is the closest to the unclassified point, and sets them to the same orientation. 
+\begin{DoxyParams}{Parameters}
+{\em Data\+Point\&} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Kyle, Nathan, Ginbot 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/04/2024 
+\end{DoxyDate}
+
+
+Implements \mbox{\hyperlink{class_classifier}{Classifier}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_n_n_classifier_8h}{NNClassifier.\+h}}\item 
+\mbox{\hyperlink{_n_n_classifier_8cpp}{NNClassifier.\+cpp}}\end{DoxyCompactItemize}

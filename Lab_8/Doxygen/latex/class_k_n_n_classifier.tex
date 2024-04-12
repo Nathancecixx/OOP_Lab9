@@ -1,0 +1,91 @@
+\doxysection{KNNClassifier Class Reference}
+\hypertarget{class_k_n_n_classifier}{}\label{class_k_n_n_classifier}\index{KNNClassifier@{KNNClassifier}}
+
+
+Unwritten \doxylink{class_classifier}{Classifier} Class.  
+
+
+
+
+{\ttfamily \#include $<$KNNClassifier.\+h$>$}
+
+
+
+Inheritance diagram for KNNClassifier\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{class_k_n_n_classifier__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for KNNClassifier\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{class_k_n_n_classifier__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_k_n_n_classifier_a694e0a7bf33b109c3f4e1df004e1b2dc}\label{class_k_n_n_classifier_a694e0a7bf33b109c3f4e1df004e1b2dc} 
+{\bfseries KNNClassifier} (const std\+::vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ \&training\+Data)
+\item 
+int \mbox{\hyperlink{class_k_n_n_classifier_a1c9b07a2610135bdf10a377e4ff1ea10}{predict}} (const \mbox{\hyperlink{class_data_point}{Data\+Point}} \&sample) override
+\begin{DoxyCompactList}\small\item\em This function will predict points using KNN. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_classifier}{Classifier}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ {\bfseries training\+Data}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Unwritten \doxylink{class_classifier}{Classifier} Class. 
+
+This class will be another classifier once implemented. \begin{DoxyAuthor}{Author}
+Kyle, Nathan, Ginbot 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/04/2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_k_n_n_classifier_a1c9b07a2610135bdf10a377e4ff1ea10}\label{class_k_n_n_classifier_a1c9b07a2610135bdf10a377e4ff1ea10} 
+\index{KNNClassifier@{KNNClassifier}!predict@{predict}}
+\index{predict@{predict}!KNNClassifier@{KNNClassifier}}
+\doxysubsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily int KNNClassifier\+::predict (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_data_point}{Data\+Point}} \&}]{sample }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This function will predict points using KNN. 
+
+Currently unwritten. 
+\begin{DoxyParams}{Parameters}
+{\em Data\+Point\&} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Kyle, Nathan, Ginbot 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/04/2024 
+\end{DoxyDate}
+
+
+Implements \mbox{\hyperlink{class_classifier}{Classifier}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_k_n_n_classifier_8h}{KNNClassifier.\+h}}\item 
+KNNClassifier.\+cpp\end{DoxyCompactItemize}
